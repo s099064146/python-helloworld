@@ -25,7 +25,7 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
-          builder: ${{ steps.buildx.outputs.name }}
+          # builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: s099064146/python-helloworld:latest
       -
